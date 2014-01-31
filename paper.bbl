@@ -1,0 +1,55 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.1 }
+
+\bibitem[Benevides 1990]{benevides10}
+\abntrefinfo{Benevides}{BENEVIDES}{1990}
+{BENEVIDES, A.~B.
+\emph{A Model-based Graphical Editor for Supporting the Creation, Verification
+  and Validation of OntoUML Conceptual Models}.
+Monografia (M.Sc. thesis) --- Centro Tecnol\'ogico, Universidade Federal do
+  Esp\'irito Santo, Vitória, Brazil, 1990.}
+
+\bibitem[Carraretto 1990]{carraretto10}
+\abntrefinfo{Carraretto}{CARRARETTO}{1990}
+{CARRARETTO, R.
+\emph{A Modeling Infrastructure for OntoUML}.
+91~f. Monografia (Gradua\c c\~ao) --- Centro Tecnol\'ogico, Universidade
+  Federal do Esp\'irito Santo, Vitória, Brazil, 1990.}
+
+\bibitem[Guizzardi 2005]{guizzardi05}
+\abntrefinfo{Guizzardi}{GUIZZARDI}{2005}
+{GUIZZARDI, G. \emph{Ontological Foundations for Structural Conceptual Models}.
+  Enschede, The Netherlands: University of Twente, 2005.}
+
+\bibitem[Harel e Rumpe 2000]{harel_rumpe00}
+\abntrefinfo{Harel e Rumpe}{HAREL; RUMPE}{2000}
+{HAREL, D.; RUMPE, B. \emph{Modeling Languages: Syntax, Semantics and All That
+  Stuff Part I: The Basic Stuff}.
+[S.l.], 2000.}
+
+\bibitem[Mylopoulos 1992]{mylopoulos92}
+\abntrefinfo{Mylopoulos}{MYLOPOULOS}{1992}
+{MYLOPOULOS, J. Conceptual modelling and telos. In:  LOUCOPOULOS, P.; ZICARI,
+  R. (Ed.). \emph{Conceptual Modelling, Databases and CASE: An Integrated View
+  of Information Systems Development}. New York: Wiley, 1992.}
+
+\bibitem[Mylopoulos 1998]{mylopoulos98}
+\abntrefinfo{Mylopoulos}{MYLOPOULOS}{1998}
+{MYLOPOULOS, J. Information modeling in the time of the revolution.
+\emph{Information Systems}, v.~23, p.~3--4, June 1998.}
+
+\bibitem[OMG 2006]{OCL20}
+\abntrefinfo{OMG}{OMG}{2006a}
+{OMG. \emph{Object Constraint Language}. 2006.
+Version 2.0.}
+
+\bibitem[OMG 2006]{UML20}
+\abntrefinfo{OMG}{OMG}{2006b}
+{OMG. \emph{Unified Modeling Language: Infrastructure Specification}. 2006.
+Version 2.0.}
+
+\end{thebibliography}

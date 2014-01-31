@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: paper.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: paper.bib
+Warning--string name "march" is undefined
+--line 87 of file paper.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.1           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex2.googlecode.com                           |
++---------------------------------------------------------+
+You've used 9 entries,
+            6711 wiz_defined-function locations,
+            1243 strings with 10330 characters,
+and the built_in function-call counts, 5770 in all, are:
+= -- 528
+> -- 146
+< -- 3
++ -- 99
+- -- 47
+* -- 362
+:= -- 883
+add.period$ -- 29
+call.type$ -- 9
+change.case$ -- 61
+chr.to.int$ -- 11
+cite$ -- 8
+duplicate$ -- 259
+empty$ -- 473
+format.name$ -- 223
+if$ -- 1346
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 144
+newline$ -- 48
+num.names$ -- 41
+pop$ -- 179
+preamble$ -- 1
+purify$ -- 28
+quote$ -- 0
+skip$ -- 346
+stack$ -- 1
+substring$ -- 192
+swap$ -- 110
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 9
+warning$ -- 0
+while$ -- 52
+width$ -- 0
+write$ -- 129
+(There was 1 warning)
