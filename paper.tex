@@ -831,6 +831,17 @@ Such fact compromises its suitability to reuse, as stated by the \cite{carrarett
 %concerns (in the sense that Benevides
 %metamodel has concepts 
 
+\section{Our infrastructure}
+
+** Outline how our infrastructure is organized and how it relates with previous works.
+** Mention briefly what piece of tech is involved in every part of the infrastructure.
+
+Essentialy, draw a diagram with:
+1. Abstract syntax (metamodel + OCL constraints)
+2. Concrete syntax (Xtext Grammar)
+3. Editor (Xtext Editor)
+4. Reference OntoUML and transformations
+
 \chapter{The UFO reference metamodel}
 
 In this chapter, we define the abstract syntax of our language by means of a
@@ -929,31 +940,26 @@ We used (If I'm not mistaken) this CompleteOCLEObjectValidator.
 In this work, we use the version 4.2 of the Eclipse platform (codename Juno) and
 EMF at its version FOO.
 
-\section{UFO reference metamodel}
+\section{Unified Foundational Ontology on Ecore}
+
+%TODO: Talk about how we adapted Carraretto's work to be free of UML concepts
+%We already talked about the WHYs.
 
 ** aka PrimeontoUML - we need a better name for this, something like Carraretto's reference metamodel.
 ** What about UFO (reference) metamodel? foundational metamodel, maybe?
 ** That is because OntoUML is a UML 2.0 Profile that incorporates the foundations captured in the UFO.
 
-We created the UFO reference metamodel in Ecore metamodel
+We created the UFO reference metamodel in Ecore
 
+\chapter{Textual Concrete Syntax}
 
-\chapter{Technologies Employed - Merge into previous chapter}
+\section{Xtext}
 
-In this chapter, we discuss the technologies employed in this work and how they
-relate.
+\section{Requisites}
 
-\section{OntoUML}
+\section{Grammar}
 
-Talk about prime ontouml, how it relates to Carraretto's reference metamodel.
-Look at Chapter 5.2 in Carraretto's work.
-
-\section{Eclipse}
-
-Chapter 5.1 on Carraretto's work
-Ecore + EMF
-
-\section{OCL}
+\section{Syntactical constraints with CompleteOCL}
 
 The Object Constraint Language (OCL)\cite{OCL20}, is a formal language used to
 describe expressions on UML models.
@@ -963,23 +969,11 @@ system being modeled or queries over objects described in a model. Note that whe
 the OCL expressions are evaluated, they do not have side effects (i.e., their
 evaluation cannot alter the state of the corresponding executing system).
 
-HOW DOES IT FIT INTO THE TECH STACK?
-
-\section{Xtext}
-
-\chapter{Textual Concrete Syntax}
-
-\section{Requisites}
-
-\section{Grammar}
-
-\section{Syntactical constraints with CompleteOCL}
-
 \chapter{Textual Editor}
 
 \section{Implementation}
 
-\section{Transformations}
+\chapter{Transformations}
 
 %-----------------------------------------------------------------
 %
