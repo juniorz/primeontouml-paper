@@ -13,8 +13,10 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: paper.bib
-Warning--string name "march" is undefined
---line 87 of file paper.bib
+Warning--entry type for "damus07" isn't style-file defined
+--line 95 of file paper.bib
+Warning--entry type for "emf_helios_nn" isn't style-file defined
+--line 106 of file paper.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -24,45 +26,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 9 entries,
+You've used 12 entries,
             6711 wiz_defined-function locations,
-            1243 strings with 10330 characters,
-and the built_in function-call counts, 5770 in all, are:
-= -- 528
-> -- 146
-< -- 3
-+ -- 99
-- -- 47
-* -- 362
-:= -- 883
-add.period$ -- 29
-call.type$ -- 9
-change.case$ -- 61
-chr.to.int$ -- 11
-cite$ -- 8
-duplicate$ -- 259
-empty$ -- 473
-format.name$ -- 223
-if$ -- 1346
+            1262 strings with 10828 characters,
+and the built_in function-call counts, 11235 in all, are:
+= -- 1219
+> -- 218
+< -- 181
++ -- 302
+- -- 69
+* -- 683
+:= -- 1541
+add.period$ -- 44
+call.type$ -- 12
+change.case$ -- 87
+chr.to.int$ -- 17
+cite$ -- 11
+duplicate$ -- 883
+empty$ -- 652
+format.name$ -- 330
+if$ -- 2391
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 144
-newline$ -- 48
-num.names$ -- 41
-pop$ -- 179
+missing$ -- 197
+newline$ -- 63
+num.names$ -- 56
+pop$ -- 249
 preamble$ -- 1
-purify$ -- 28
+purify$ -- 39
 quote$ -- 0
-skip$ -- 346
+skip$ -- 976
 stack$ -- 1
-substring$ -- 192
-swap$ -- 110
-text.length$ -- 2
+substring$ -- 422
+swap$ -- 330
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 9
 warning$ -- 0
-while$ -- 52
+while$ -- 72
 width$ -- 0
-write$ -- 129
-(There was 1 warning)
+write$ -- 175
+(There were 2 warnings)

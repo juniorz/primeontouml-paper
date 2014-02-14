@@ -676,7 +676,8 @@ Another important aspect is that Eclipse has an extensible plug-in system that
 allows us to provide new functionalities on top of the runtime system.
 Moreover, Eclipse is free and open source software.
 
-Talk about the structure, describing what each chapter contains.
+%TODO
+TODO: Talk about the structure, describing what each chapter contains.
 
 \chapter{Modeling Infrastructure}
 
@@ -726,7 +727,7 @@ However, Carrareto's work also carries its own issues with respect to reuse.
 
 %TODO: describe what we did
 ** Should we mention that we tried to create a concrete syntax for this reference
-metamodel and describe how we did it, and THEN talks about the problems we found?
+metamodel and describe how we did it, and THEN talk about the problems we found?
 
 First, the reference metamodel is based on the Eclipse implementation of the UML
 Superstructure (included in EMF 2.5) metamodel. That is, the metamodel was built
@@ -803,6 +804,12 @@ In addition to that, the OCL plugin in use is deprecated in Eclipse versions Hel
 and later and the provided workaround\footnote{http://wiki.eclipse.org/MDT/OCL/FAQ\#How\_do\_I\_workaround\_org.eclipse.emf.ocl\_deprecation\_in\_Helios\_and\_later.3F} compromises the installation, making impossible the integration
 of the tool with other components from the Eclipse Modeling Project.
 
+% http://help.eclipse.org/juno/topic/org.eclipse.ocl.doc/help/Integration.html?cp=49_1_7_1#Integration-Messages
+We also wanted to use custom validation messages for OCL and that was not possible
+with the Indigo Release (or older).
+
+
+
 %Despite claiming to be free from concrete syntax concerns, the reference metamodel
 %is not completely free from concrete syntax concerns (at least it is not concerned
 %exclusively with 
@@ -824,11 +831,112 @@ Such fact compromises its suitability to reuse, as stated by the \cite{carrarett
 %concerns (in the sense that Benevides
 %metamodel has concepts 
 
-\section{Our infrastructure, aka PrimeontoUML - we need a better name for this, something like Carraretto's reference metamodel.}
+\chapter{The UFO reference metamodel}
 
+In this chapter, we define the abstract syntax of our language by means of a
+metamodel. First, we present the technology used in its construction, then we
+explain the metamodel itself. Finally, we discuss the differences between our
+metamodel and the former metamodel defined in a previous work.
+
+%abstract syntax of our language by constructing
+%a metamodel free (exempt, clear) of the UFO reference metamodel
+
+\section{The Eclipse Modeling Framework}
+
+Eclipse is an open source software project, the purpose of which is to provide
+a highly integrated tool platform. The work in Eclipse includes a core project,
+which includes a generic framework for tool integration, and a Java development
+environment built using it. Other projects extend the core framework to support
+specific kinds of tools and development environments.
+
+The Eclipse Modeling Project is the focal point for the evolution and promotion
+of model-based development technologies at Eclipse. At its core is the Eclipse
+Modeling Framework (EMF) \cite{budinsky09} which provides the basic framework for modeling.
+
+The EMF exploits the facilities provided by Eclipse to make it possible to relate
+modeling concepts directly to their implementations, thereby bringing to Eclipse
+— and Java developers in general — the benefits of modeling with a low cost of entry.
+%
+EMF is a framework and code generation facility that allows to define a model in
+a specific format (i.e., Java interfaces, UML diagram, or XML Schema) and then
+generate any of the others and also the corresponding implementation classes in
+an automated fashion.
+
+Another key contribution of EMF to the Eclipse's modeling landscape is the Ecore
+metamodeling language: the standard language for defining metamodels in
+the Eclipse project. A simplified subset of Ecore is shown in figure~\ref{fig:ecore_fragment}.
+
+An \emph{EClass} is used to represent a modeled class: it has a name, zero or more
+attributes, and zero or more references.
+\emph{EAttribute} is used to represent a modeled attribute. Attributes have a
+name and a type.
+\emph{EReference} is used to represent one end of an association between classes.
+It has a name, a boolean flag to indicate if it represents containment, and a
+reference (target) type, which is another class.
+And, finally, \emph{EDataType} is used to represent the type of an attribute.
+A data type can be a primitive type like \emph{int} or \emph{float} or an object
+type like \emph{java.util.Date}.
+
+\begin{figure}
+\includegraphics[width=0.8\textwidth]{images/ecore_fragment}
+\caption{A simplified subset of the Ecore metamodel \protect\cite{budinsky09}}
+\label{fig:ecore_fragment}
+\end{figure}
+
+%TODO: Should I add an example? I dont think so.
+
+The most important benefit of EMF, as with modeling in general, is the boost in
+productivity that results from automatic code generation. From a single Ecore
+model it is possible to generate Java classes and interfaces for every EMF metaclass.
+
+As part of the EMF, the \emph{EMF Validation Framework} provides model validation
+capabilities by supporting the evaluation of invariants and constraints via a
+validator that is invoked at important moments by an application or at a user's
+discretion. \cite{emf_helios_nn}
+
+Prior to EMF version FOO, these invariants and constraints had to be defined
+via operations and annotations, respectively. \cite[Chapter~18]{budinsky09}
+Then they would be defined as methods during the code generation step and finally
+be manually implemented in Java.
+
+%TODO: should I introduce MDT OCL yet?
+
+% This is valid for EMF 2.3 / MDT OCL 1.1
+The usage of \emph{Java Emitter Templates} (JET) made possible to integrate the
+MDT OCL and the EMF to directly obtain the Java code for validation,
+without any post-generation custom code \cite{damus07}.
+However, this approach was deprecated with the deprecation of EMF version RAH.
+
+The version BAR of EMF\footnote{part of the Eclipse Helios release} introduced,
+the concept of a Validation Delegate, in order to delegate evaluation of invariants and
+constraints to an external engine based on a well-defined interface.\cite{emf_helios_nn}
+This validation delegate became the standard for extending EMF metamodel validation
+capabilities.
+
+%TODO: talk about how we integrated completeOCL constraints in the ecore model.
+
+%TODO: OCL history too?
+% http://help.eclipse.org/juno/topic/org.eclipse.ocl.doc/help/Delegates.html?cp=49_5_9
+OCLInEcore uses the EMF delegate mechanisms to extend Ecore models with the OCL
+engine.
+
+% http://help.eclipse.org/juno/topic/org.eclipse.ocl.doc/help/PivotProgrammersGuide.html#CompleteOCLEObjectValidator
+CompleteOCL allows to extend the metamodel with a external OCL document.
+We used (If I'm not mistaken) this CompleteOCLEObjectValidator.
+
+% It would be important to talk about all the versions in this paper.
+%TODO: Look at Evernote note
+In this work, we use the version 4.2 of the Eclipse platform (codename Juno) and
+EMF at its version FOO.
+
+\section{UFO reference metamodel}
+
+** aka PrimeontoUML - we need a better name for this, something like Carraretto's reference metamodel.
 ** What about UFO (reference) metamodel? foundational metamodel, maybe?
-
 ** That is because OntoUML is a UML 2.0 Profile that incorporates the foundations captured in the UFO.
+
+We created the UFO reference metamodel in Ecore metamodel
+
 
 \chapter{Technologies Employed - Merge into previous chapter}
 

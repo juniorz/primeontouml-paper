@@ -13,12 +13,25 @@
 Monografia (M.Sc. thesis) --- Centro Tecnol\'ogico, Universidade Federal do
   Esp\'irito Santo, Vitória, Brazil, 1990.}
 
+\bibitem[Budinsky et al. 2009]{budinsky09}
+\abntrefinfo{Budinsky et al.}{BUDINSKY et al.}{2009}
+{BUDINSKY, F. et al. \emph{EMF: Eclipse Modeling Framework}. 2nd revised. ed.
+  Boston: Addison-Wesley Professional, 2009.
+ISBN 9780321331885.}
+
 \bibitem[Carraretto 1990]{carraretto10}
 \abntrefinfo{Carraretto}{CARRARETTO}{1990}
 {CARRARETTO, R.
 \emph{A Modeling Infrastructure for OntoUML}.
 91~f. Monografia (Gradua\c c\~ao) --- Centro Tecnol\'ogico, Universidade
   Federal do Esp\'irito Santo, Vitória, Brazil, 1990.}
+
+\bibitem[Damus 2007]{damus07}
+\abntrefinfo{Damus}{DAMUS}{2007}
+{DAMUS, C.~W. \emph{Implementing Model Integrity in EMF with MDT OCL}. 2007.
+Dispon{\'\i}vel em:
+  \url{http://www.eclipse.org/articles/article.php?file=Article-EMF-Codegen-with-OCL/index.html}.
+  Acesso em: 2014-02-14.}
 
 \bibitem[Guizzardi 2005]{guizzardi05}
 \abntrefinfo{Guizzardi}{GUIZZARDI}{2005}
@@ -51,5 +64,12 @@ Version 2.0.}
 \abntrefinfo{OMG}{OMG}{2006b}
 {OMG. \emph{Unified Modeling Language: Infrastructure Specification}. 2006.
 Version 2.0.}
+
+\bibitem[Steinberg 2014]{emf_helios_nn}
+\abntrefinfo{Steinberg}{STEINBERG}{2014}
+{STEINBERG, D. \emph{EMF/New and Noteworthy/Helios}. 2014.
+Dispon{\'\i}vel em:
+  \url{https://wiki.eclipse.org/EMF/New\_and\_Noteworthy/Helios\#Support\_for\_Validation\_Delegates}.
+  Acesso em: 2014-02-14.}
 
 \end{thebibliography}
