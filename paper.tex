@@ -8,25 +8,23 @@
 % ------------------------------------------------------------------------
 
 \documentclass[
-	% -- opções da classe memoir --
-	10pt,				% tamanho da fonte
-%	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
-%	twoside,			% para impressão em verso e anverso. Oposto a oneside
-	oneside,
-	a4paper,			% tamanho do papel. 
-	% -- opções da classe abntex2 --
-	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
-	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
-	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
-	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
-	% -- opções do pacote babel --
+  % -- opções da classe memoir --
+  10pt,				% tamanho da fonte
+  %	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+  %	twoside,			% para impressão em verso e anverso. Oposto a oneside
+  oneside,
+  a4paper,			% tamanho do papel. 
+  % -- opções da classe abntex2 --
+  %chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+  %section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+  %subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+  %subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+  % -- opções do pacote babel --
   % adicionar idiomas para hifenização.
   % the last is the main language of the document
-%	french,				% idioma adicional para hifenização
-%	spanish,			% idioma adicional para hifenização
-	brazil,
-	english
-	]{abntex2}
+  brazilian,
+  english
+]{abntex2}
 
 % ---
 % PACOTES
@@ -98,14 +96,16 @@
   \par
   Departamento de Ciência da Computação
 }
+
 \tipotrabalho{Monografia}
+
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
 \preambulo{
   Monografia apresentada ao curso de Ciência da Computação
   do Centro Tecnológico da Universidade Federal do Espírito Santo,
   como requisito parcial para obtenção do título de Bacharel em Ciência da Computação.
-%  Orientador: \imprimirorientador
+% Orientador: \imprimirorientador
 }
 % ---
 
@@ -119,18 +119,18 @@
 % informações do PDF
 \makeatletter
 \hypersetup{
-     	%pagebackref=true,
-		pdftitle={\@title}, 
-		pdfauthor={\@author},
-    	pdfsubject={\imprimirpreambulo},
-	    pdfcreator={LaTeX with abnTeX2},
-		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
-		colorlinks=true,       		% false: boxed links; true: colored links
-    	linkcolor=blue,          	% color of internal links
-    	citecolor=blue,        		% color of links to bibliography
-    	filecolor=magenta,      		% color of file links
-		urlcolor=blue,
-		bookmarksdepth=4
+  %pagebackref=true,
+  pdftitle={\@title}, 
+  pdfauthor={\@author},
+  pdfsubject={\imprimirpreambulo},
+  pdfcreator={LaTeX with abnTeX2},
+  pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+  colorlinks=true,       		% false: boxed links; true: colored links
+  linkcolor=blue,          	% color of internal links
+  citecolor=blue,        		% color of links to bibliography
+  filecolor=magenta,      		% color of file links
+  urlcolor=blue,
+  bookmarksdepth=4
 }
 \makeatother
 % --- 
@@ -266,39 +266,40 @@
 % \includepdf{folhadeaprovacao_final.pdf}
 %
 \begin{folhadeaprovacao}
+  \begin{otherlanguage*}{brazil}
 
-  \begin{center}
-    {\ABNTEXchapterfont\large\imprimirautor}
-
-    \vspace*{\fill}\vspace*{\fill}
     \begin{center}
-      \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
-    \end{center}
-    \vspace*{\fill}
-    
-    \hspace{.45\textwidth}
-    \begin{minipage}{.5\textwidth}
-        \imprimirpreambulo
-    \end{minipage}%
-    \vspace*{\fill}
-   \end{center}
-        
-   Trabalho aprovado. \imprimirlocal, ?? de dezembro de 2013:
+      {\ABNTEXchapterfont\large\imprimirautor}
 
-   \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
-   \assinatura{\textbf{Professor} \\ Convidado 1}
-   \assinatura{\textbf{Professor} \\ Convidado 2}
-   %\assinatura{\textbf{Professor} \\ Convidado 3}
-   %\assinatura{\textbf{Professor} \\ Convidado 4}
-      
-   \begin{center}
-    \vspace*{0.5cm}
-    {\large\imprimirlocal}
-    \par
-    {\large\imprimirdata}
-    \vspace*{1cm}
-  \end{center}
-  
+      \vspace*{\fill}\vspace*{\fill}
+      \begin{center}
+        \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+      \end{center}
+      \vspace*{\fill}
+
+      \hspace{.45\textwidth}
+      \begin{minipage}{.5\textwidth}
+          \imprimirpreambulo
+      \end{minipage}%
+      \vspace*{\fill}
+     \end{center}
+
+     Trabalho aprovado. \imprimirlocal, XX de XXX de 2015:
+
+     \assinatura{\textbf{\imprimirorientador} \\ Orientador}
+     \assinatura{\textbf{Professor} \\ Convidado 1}
+     \assinatura{\textbf{Professor} \\ Convidado 2}
+     %\assinatura{\textbf{Professor} \\ Convidado 3}
+     %\assinatura{\textbf{Professor} \\ Convidado 4}
+
+     \begin{center}
+      \vspace*{0.5cm}
+      {\large\imprimirlocal}
+      \par
+      {\large\imprimirdata}
+      \vspace*{1cm}
+    \end{center}
+  \end{otherlanguage*}
 \end{folhadeaprovacao}
 % ---
 
@@ -317,7 +318,9 @@
 % Agradecimentos
 % ---
 \begin{agradecimentos}
-%
+  \begin{otherlanguage*}{brazil}
+  % 
+  \end{otherlanguage*}
 \end{agradecimentos}
 % ---
 
@@ -341,28 +344,6 @@
 % ---
 
 % resumo em português
-\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
-\begin{resumo}
- Essa monografia provê uma sintaxe textual para a criação de modelos conceituais
- baseados numa linguagem de modelagem filosoficamente e cognitivamente bem-fundada,
- chamada OntoUML, bem como um editor para o uso desta linguagem.
-%
- Primeiramente, revisamos as restrições de integridade contidas no metamodelo
- da linguagem OntoUML e as adequamos de modo a ser compatível com o ferramental atual.
-%
- Em seguida, propomos uma sintaxe concreta textual (uma linguagem específica de domínio, DSL)
- para representar os conceitos existentes no metamodelo.
-%
- Na sequência, desenvolvemos um editor textual para que usuários possam criar e
- manipular modelos OntoUML por meio da DSL proposta.
-%
- Objetivo é criar uma linguagem textual que represente os conceitos da linguagem
- OntoUML e fornecer a ferramenta necessária para seu uso.
-%
- Portanto, nesse trabalho propomos uma sintaxe concreta para a linguagem OntoUML
- e provemos uma ferramenta que possibilita a edição, validação sintática e
- transformação de modelos.
-%
 % Segundo a \citeonline[3.1-3.2]{NBR6028:2003}, o resumo deve ressaltar o
 % objetivo, o método, os resultados e as conclusões do documento. A ordem e a extensão
 % destes itens dependem do tipo de resumo (informativo ou indicativo) e do
@@ -371,35 +352,56 @@
 % próprio documento. (\ldots) As palavras-chave devem figurar logo abaixo do
 % resumo, antecedidas da expressão Palavras-chave:, separadas entre si por
 % ponto e finalizadas também por ponto.
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}
+  \begin{otherlanguage*}{brazil}
+    Essa monografia provê uma sintaxe textual para a criação de modelos conceituais
+    baseados numa linguagem de modelagem filosoficamente e cognitivamente bem-fundada,
+    chamada OntoUML, bem como um editor para o uso desta linguagem.
+%
+    Primeiramente, revisamos as restrições de integridade contidas no metamodelo
+    da linguagem OntoUML e as adequamos de modo a ser compatível com o ferramental atual.
+%
+    Em seguida, propomos uma sintaxe concreta textual (uma linguagem específica de domínio, DSL)
+    para representar os conceitos existentes no metamodelo.
+%
+    Na sequência, desenvolvemos um editor textual para que usuários possam criar e
+    manipular modelos OntoUML por meio da DSL proposta.
+%
+    Objetivo é criar uma linguagem textual que represente os conceitos da linguagem
+    OntoUML e fornecer a ferramenta necessária para seu uso.
+%
+    Portanto, nesse trabalho propomos uma sintaxe concreta para a linguagem OntoUML
+    e provemos uma ferramenta que possibilita a edição, validação sintática e
+    transformação de modelos.
 
- \textbf{Palavras-chaves}: OntoUML. linguagem específica de domínio. Eclipse. Xtext.
+    \textbf{Palavras-chaves}: OntoUML. linguagem específica de domínio. Eclipse. Xtext.
+  \end{otherlanguage*}
 \end{resumo}
 
 % resumo em inglês
 \begin{resumo}[Abstract]
- \begin{otherlanguage*}{english}
-   This work provides both a textual sintax to creating conceptual models 
-   based on a philosophically and cognitively well-founded modeling language,
-   named OntoUML, and an editor to the language itself.
+  This work provides both a textual syntax to creating conceptual models 
+  based on a philosophically and cognitively well-founded modeling language,
+  named OntoUML, and an editor to the language itself.
 %
-   First, we review the integrity constraints contained in the language's metamodel
-   and we suit them to be compatible with the current tooling.
+  First, we review the integrity constraints contained in the language's metamodel
+  and we suit them to be compatible with the current tooling.
 %
-   Then, we propose a textual concrete syntax (a domain specific language, DSL)
-   to represent the concepts existing in the metamodel.
+  Then, we propose a textual concrete syntax (a domain specific language, DSL)
+  to represent the concepts existing in the metamodel.
 %
-   In the sequel, we design a textual editor based on the Eclipse platform
-   to allow users to create and manipulate OntoUML models using the proposed DSL.
+  In the sequel, we design a textual editor based on the Eclipse platform
+  to allow users to create and manipulate OntoUML models using the proposed DSL.
 %
-   The goal is to create a textual language that represents the concepts of
-   the OntoUML language and provide a tool needed for its use.
+  The goal is to create a textual language that represents the concepts of
+  the OntoUML language and provide a tool needed for its use.
 %
-   Therefore, in this work we propose a concrete sintax to the OntoUML language
-   and provide a tool which support the editing, syntax validation and
-   transformation of models.
+  Therefore, in this work we propose a concrete syntax to the OntoUML language
+  and provide a tool which support the editing, syntax validation and
+  transformation of models.
 
-   \textbf{keywords}: OntoUML. domain specific language. Eclipse. Xtext.
- \end{otherlanguage*}
+  \textbf{keywords}: OntoUML. domain specific language. Eclipse. Xtext.
 \end{resumo}
 % ---
 
@@ -905,24 +907,35 @@ capabilities by supporting the evaluation of invariants and constraints via a
 validator that is invoked at important moments by an application or at a user's
 discretion. \cite{emf_helios_nn}
 
-Prior to EMF version FOO, these invariants and constraints had to be defined
+% Maybe it would be better if I 
+% Prior to EMF version FOO,
+Before Eclipse Helios release,
+these invariants and constraints had to be defined
 via operations and annotations, respectively. \cite[Chapter~18]{budinsky09}
 Then they would be defined as methods during the code generation step and finally
 be manually implemented in Java.
 
 %TODO: should I introduce MDT OCL yet?
 
-% This is valid for EMF 2.3 / MDT OCL 1.1
+% This is valid for EMF 2.3 / MDT OCL 1.1 (from where?)
 The usage of \emph{Java Emitter Templates} (JET) made possible to integrate the
-MDT OCL and the EMF to directly obtain the Java code for validation,
-without any post-generation custom code \cite{damus07}.
-However, this approach was deprecated with the deprecation of EMF version RAH.
+MDT OCL and the EMF to directly obtain the Java code for validation, without any
+post-generation manual code \cite{damus07}.
 
-The version BAR of EMF\footnote{part of the Eclipse Helios release} introduced,
+%The version BAR of EMF\footnote{part of the Eclipse Helios release} introduced
+The Eclipse Helios release introduced
 the concept of a Validation Delegate, in order to delegate evaluation of invariants and
 constraints to an external engine based on a well-defined interface.\cite{emf_helios_nn}
+
 This validation delegate became the standard for extending EMF metamodel validation
-capabilities.
+capabilities. In respect to using OCL constraints to provide validation to EMF
+models, the validation delegate deprecated the usage of JET-based validators
+in favour of delegate-based validator.
+
+%(the OCL-delegate validator)
+%with respect to implement OCL validations. The OCLInEcoreValidator validator is
+%one example of delegate-based validator, and I believe CompleteOCLValidator too.
+%(SEE the documentation).
 
 %TODO: talk about how we integrated completeOCL constraints in the ecore model.
 
@@ -954,6 +967,8 @@ We created the UFO reference metamodel in Ecore
 \chapter{Textual Concrete Syntax}
 
 \section{Xtext}
+
+Xtext is workbench
 
 \section{Requisites}
 

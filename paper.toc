@@ -1,5 +1,5 @@
 \changetocdepth {4}
-\select@language {english}
+\select@language {brazil}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -30,4 +30,4 @@
 \contentsline {chapter}{Conclusions}{19}{chapter*.7}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Bibliography}{20}{section*.10}
+\contentsline {chapter}{Refer\^encias}{20}{section*.10}
